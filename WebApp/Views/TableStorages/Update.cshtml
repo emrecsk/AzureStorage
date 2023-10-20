@@ -1,0 +1,28 @@
+﻿@model AzureStrorageLibrary.Models.Product
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+
+<form class="form-check-inline" asp-action="Update" method="post" enctype="application/x-www-form-urlencoded">
+    <label for="name">Product Name:</label>
+    <input class="form-control" asp-for="Name" type="text" id="name" required />
+    <br /><br />
+
+    <label for="price">Price:</label>
+    <input class="form-control" type="number" id="price" asp-for="Price" step="0.01" required />
+    <br /><br />
+
+    <label for="stock">Stock:</label>
+    <input class="form-control" type="number" id="stock" asp-for="Stock" required />
+    <br /><br />
+
+    <label for="color">Color:</label>
+    <input class="form-control" type="text" id="color" asp-for="Color" />
+    <input hidden asp-for="PartitionKey" />
+    <input hidden asp-for="RowKey" />
+    <input hidden asp-for="ETag" /> @* a: ETag is a property of the entity that is used for optimistic concurrency.*@
+    <br /><br />
+    <button class="btn btn-info" type="submit">Update</button>
+</form>
