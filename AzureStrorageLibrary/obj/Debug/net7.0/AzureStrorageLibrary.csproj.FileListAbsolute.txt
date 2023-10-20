@@ -1,0 +1,12 @@
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\bin\Debug\net7.0\AzureStrorageLibrary.deps.json
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\bin\Debug\net7.0\AzureStrorageLibrary.dll
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\bin\Debug\net7.0\AzureStrorageLibrary.pdb
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.csproj.AssemblyReference.cache
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.AssemblyInfoInputs.cache
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.AssemblyInfo.cs
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.csproj.CoreCompileInputs.cache
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.dll
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\refint\AzureStrorageLibrary.dll
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\AzureStrorageLibrary.pdb
+C:\Users\10123083\source\personal_repos\AzureStrorage\AzureStrorageLibrary\obj\Debug\net7.0\ref\AzureStrorageLibrary.dll
