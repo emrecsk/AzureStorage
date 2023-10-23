@@ -2,6 +2,7 @@ namespace AzureStrorageLibrary
 {
     public enum EContainerName{
         pictures,
+        projectpictures,
         pdfs,
         logs
     }
@@ -14,6 +15,6 @@ namespace AzureStrorageLibrary
         Task<IEnumerable<string>> ListBlobsAsync(EContainerName containerName);
         Task SetLog(string message, string blobName);
         Task<List<string>> GetLogAsync(string blobName);
-        List<string> GetNames(EContainerName containerName);
+        Task<List<string>> GetNames(EContainerName containerName);
     }
 }

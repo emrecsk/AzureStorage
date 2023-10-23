@@ -18,9 +18,9 @@ namespace WebApp.Controllers
         {            
             TempData.Keep("message");
             ViewBag.message = TempData.Get<NotificationViewModel>("message");
-            List<FileBlobViewModel> fileBlobViewModel = new();
+            List<FileBlobViewModel> fileBlobViewModel = new();            
             string blobURL = $"{_blobStorage!.BlobURL}/{EContainerName.pictures}";
-            List<string> names = _blobStorage.GetNames(EContainerName.pictures);
+            List<string> names = await _blobStorage.GetNames(EContainerName.pictures);
             fileBlobViewModel = names.Select(name => new FileBlobViewModel
             {
                 blobName = name,

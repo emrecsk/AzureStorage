@@ -83,9 +83,10 @@ namespace AzureStrorageLibrary.Services
             return logs;
         }
 
-        public List<string> GetNames(EContainerName containerName)
+        public async Task<List<string>> GetNames(EContainerName containerName)
         {
             var containerClient = _blobServiceClient.GetBlobContainerClient(containerName.ToString().ToLower());
+            await containerClient.CreateIfNotExistsAsync();
             var blobs = containerClient.GetBlobs();
             List<string> names = new();
             foreach (var blob in blobs)
