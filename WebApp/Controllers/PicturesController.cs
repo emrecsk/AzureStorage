@@ -1,6 +1,9 @@
 ﻿using AzureStrorageLibrary;
 using AzureStrorageLibrary.Models;
+using AzureStrorageLibrary.Services;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Text;
 using WebApp.Common;
 using WebApp.Models;
 
@@ -24,6 +27,8 @@ namespace WebApp.Controllers
         {
             TempData.Keep("message");
             ViewBag.message = TempData.Get<NotificationViewModel>("message");
+            ViewBag.UserId = UserId;
+            ViewBag.City = City;
             List<FileBlobViewModel> fileblobs = new();
             var user = await _storage.Get(UserId,City);            
             if (user != null)
@@ -62,6 +67,15 @@ namespace WebApp.Controllers
             notificationViewModel.Title = "Success!";
 
             return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> AddWaterMark(PictureWaterMarkQueue pictureWaterMarkQueue)
+        {
+            var sjonstring = JsonConvert.SerializeObject(pictureWaterMarkQueue);
+            string JsonStringBase64 = Convert.ToBase64String(Encoding.UTF8.GetBytes(sjonstring));
+            AzQueue azQueue = new AzQueue("watermark");
+            await azQueue.SendMessageAsync(JsonStringBase64);
+
+            return Ok();
         }
     }
 }

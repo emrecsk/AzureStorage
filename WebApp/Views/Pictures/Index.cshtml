@@ -2,16 +2,44 @@
 @{
     ViewData["Title"] = "Index";
 }
+@section Scripts {
+    <script type="text/javascript">
+        
+        $(document).ready(() => {
+            var pictures = new Array();
+            var UserId = "@ViewBag.UserId";
+            var City = "@ViewBag.City";
+            $("#images img").click(function () {
+                $(this).css("border", "2px solid red");
+                pictures.push($(this).data("name"));
+                console.log(pictures);
+            });
+            $("#AddWatermark").click(function () {
+                let pictureWaterMarkQueue = { // let means local variable only available in this scope
+                    "UserID": UserId,
+                    "City": City,
+                    "Pictures": pictures,
+                    "ConnectionID" : "123",
+                    "WatermarkText": $("#watermarkText").val()
+                };
+                $.post("/Pictures/AddWatermark", pictureWaterMarkQueue, function (data) {                                      
+                    alert("Watermark added successfully");                    
+                });
+            });
+        });
+
+    </script>
+}
 
 <h1>Index</h1>
 @{
     var message = TempData.Get<NotificationViewModel>("message");
 if (message != null)
     {
-        <div class="alert @message.CssClass alert-dismissible fade show" role="alert">
-            <strong>@message.Title</strong> @message.Message
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+            <div class="alert @message.CssClass alert-dismissible fade show" role="alert">
+                <strong>@message.Title</strong> @message.Message
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
     }
 }
     <div class="row">
@@ -24,6 +52,10 @@ if (message != null)
                 <br />
                 <button type="submit" class="btn btn-primary">Upload</button>
             </form>
+            <div class="form-check-inline">
+                <input type="text" id="watermarkText"/>
+                <button type="button" class="btn btn-primary" id="AddWatermark">Add Watermark</button>
+            </div>
         </div>
     </div>
 <div id="images">
