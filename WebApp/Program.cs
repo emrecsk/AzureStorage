@@ -18,8 +18,8 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddSignalR();
 IKernel kernel = new KernelBuilder().WithAzureChatCompletionService(
          "chat",                      // Azure OpenAI Deployment Name
-         "https://cog-fy2j2wq6oicv6.openai.azure.com/", // Azure OpenAI Endpoint
-         "2437bd26a266403685e01678b51a5e43").Build();
+         "", // Azure OpenAI Endpoint
+         "").Build();
 
 builder.Services.AddSingleton<IKernel>(kernel);
 

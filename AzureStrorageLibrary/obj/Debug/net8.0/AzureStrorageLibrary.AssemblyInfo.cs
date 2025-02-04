@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzureStrorageLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aba5fd4f9a103217ce954c6c3489dd4daeaf4a49")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzureStrorageLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzureStrorageLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
