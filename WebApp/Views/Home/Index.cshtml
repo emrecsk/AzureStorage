@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $("button").click(() => {
+                $.ajax({
+                    url: '@Url.Action("Chat", "Home")',
+                    type: "POST",
+                    data: { message: $("#question").val(), },
+                    success: (data) => {                        
+                        $("#conversation").val($("#conversation").val() + "\n" + data);
+                        $("#question").val("");
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+        <h2>Chat with me</h2>
+    <div class="container bg-secondary">
+         <div class="mb-3 pt-3">          
+            <div class="form-floating mt-3">
+                <textarea id="conversation" class="form-control" style="height: 150px" disabled></textarea>
+            </div>
+        </div>
+        <div class="mb-3">
+         
+            <input class="form-control" type="text" id="question" placeholder="Ask me anything..." />
+        </div>
+        <button class="btn btn-success mb-3">Ask</button>
+    </div>
+</div>
