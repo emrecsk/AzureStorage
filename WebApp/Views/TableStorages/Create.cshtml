@@ -1,0 +1,32 @@
+﻿@model AzureStrorageLibrary.Models.Product
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>Create Product</h1>
+
+<form class="form-check-inline" asp-action="Create" method="post" enctype="application/x-www-form-urlencoded">
+    <label for="name">Product Name:</label>
+    <input class="form-control" asp-for="Name" type="text" id="name" required />
+    <br /><br />
+
+    <label for="price">Price:</label>
+    <input class="form-control" type="number" id="price" asp-for="Price" step="0.01" required />
+    <br /><br />
+
+    <label for="stock">Stock:</label>
+    <input class="form-control" type="number" id="stock" asp-for="Stock" required />
+    <br /><br />
+
+    <label for="color">Color:</label>
+    <input class="form-control" type="text" id="color" asp-for="Color" />
+    <br /><br />   
+    <label for="partitionKey">Partition Key:</label>
+    <select class="form-control" id="partitionKey" asp-for="PartitionKey" required>
+        <option value="">Select a partition key</option>
+        <option value="IT">IT</option>
+        <option value="Office">Office</option>
+        <option value="Home">Home</option>
+</select>
+    <br /><br />    
+    <button class="btn btn-info" type="submit">Create</button>
+</form>

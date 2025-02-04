@@ -1,0 +1,57 @@
+@using WebApp.Models
+@using WebApp.Common
+@model List<FileBlobViewModel>
+@{
+    ViewData["Title"] = "FileBlob";
+}
+<h1>Blobs</h1>
+@{    
+    var message = TempData.Get<NotificationViewModel>("message");
+    if (message != null)
+    {
+        <div class="alert @message.CssClass alert-dismissible fade show" role="alert">
+            <strong>@message.Title</strong> @message.Message
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@item.blobURL" width="100" />
+                </td>
+                <td>@item.blobName</td>
+                <td>                    
+                    <a class="btn btn-primary" asp-action="Download" asp-route-blobName="@item.blobName" >Download</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-blobName="@item.blobName">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<hr />
+<h2>Upload Picture</h2>
+<form asp-action="Upload" method="post" enctype="multipart/form-data">
+    <input class="form-control-file" type="file" name="file" />
+    <input type="submit" value="Upload" class="btn btn-primary" />
+</form>
+<hr />
+<h2>Logs</h2>
+<table>
+@foreach(var item in ViewBag.logs as List<string>)
+{
+    <tr>
+            <td><strong>@item</strong></td>
+    </tr>
+}
+</table>

@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<h2>Products</h2>
+<hr />
+<div class="alert-info">
+    @ViewBag.Message
+    </div>
+    <form class="form-check-inline" asp-action="Query" method="get">
+    <input type="number" name="price" /> 
+    <input type="submit" value="Query">
+    </form>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>RowKey</th>
+            <th>PartitionKey</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Color</th>
+            <th>Timestamp</th>
+            <th>Control</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.products as List<AzureStrorageLibrary.Models.Product>)
+        {
+            <tr>
+                <td>@item.RowKey</td>
+                <td>@item.PartitionKey</td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Stock</td>
+                <td>@item.Color</td>
+                <td>@item.Timestamp</td>
+                <td>
+                    <a class="btn btn-secondary" asp-controller="TableStorages" asp-action="Update" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Update</a>
+                    <a class="btn btn-danger" asp-controller="TableStorages" asp-action="Delete" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Delete</a>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-dark" asp-action="Create" asp-controller="TableStorages">Create Product</a>
