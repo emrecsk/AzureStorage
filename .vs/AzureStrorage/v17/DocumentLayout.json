@@ -1,33 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|c:\\users\\10123083\\source\\personal_repos\\azurestrorage\\webapp\\views\\tablestorages\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tablestorages\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|c:\\users\\10123083\\source\\personal_repos\\azurestrorage\\webapp\\views\\tablestorages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tablestorages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|c:\\users\\10123083\\source\\personal_repos\\azurestrorage\\webapp\\controllers\\tablestoragescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\tablestoragescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|c:\\users\\10123083\\source\\personal_repos\\azurestrorage\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CAAEC77-7984-4752-9ED6-71B0C181C151}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 183,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -37,62 +24,24 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "WebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Program.cs",
-              "RelativeToolTip": "WebApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T13:46:14.907Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TableStoragesController.cs",
-              "DocumentMoniker": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Controllers\\TableStoragesController.cs",
-              "RelativeDocumentMoniker": "WebApp\\Controllers\\TableStoragesController.cs",
-              "ToolTip": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Controllers\\TableStoragesController.cs",
-              "RelativeToolTip": "WebApp\\Controllers\\TableStoragesController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T13:44:45.103Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 183,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Views\\TableStorages\\Update.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\TableStorages\\Update.cshtml",
-              "ToolTip": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Views\\TableStorages\\Update.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\TableStorages\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-20T14:06:14.99Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Views\\TableStorages\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\TableStorages\\Create.cshtml",
-              "ToolTip": "C:\\Users\\10123083\\source\\personal_repos\\AzureStrorage\\WebApp\\Views\\TableStorages\\Create.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\TableStorages\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-20T13:59:38.775Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
